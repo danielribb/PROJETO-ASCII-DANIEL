@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    background-color: #f8f8f8;
+    padding: 20px;
+    padding-top: 60px; 
+}
+
+.navbar {
+    background-color: #052d77;
+    color: #fff;
+    padding: 10px 0; 
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+.navbar h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
+    text-align: center;
+}
+
+.navbar p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #fff;
+    text-align: center;
+    margin-right: 18%;
+}
+
+.logo {
+    text-align: center;
+    margin-left: 10%;
+}
+
+.logo h1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-right: 20%;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #30261a;
+    text-align: center;
+    margin-right: 15%;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 80px auto; 
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.formulario input[type="text"],
+.formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario textarea {
+    resize: vertical;
+}
+
+.formulario button {
+    background-color: #052d77;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.formulario button:hover {
+    background-color: #03409e;
+}
+.formulario a {
+    display: inline-block;
+    background-color: #052d77;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.formulario a:hover {
+    background-color: #0366d6;
+}
+
+.footer {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #30261a;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  
+    .logo h1 {
+        font-size: 30px; 
+        margin-right: 30%; 
+        
+    }
+
+    .logo a {
+        margin-right: 30%; 
+    }
+    .footer {
+        position: relative; 
+        width: 100%;
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 20px;
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-style: italic;
+        color: #30261a;
+        clear: both; 
+    }
+}

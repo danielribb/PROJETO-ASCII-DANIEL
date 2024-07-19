@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+ box-sizing: border-box;
+}
+body {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    text-align: center;
+    margin: 20px 0;
+    justify-content: center;
+    color: #30261a;
+}
+
+
+.logo h1 {
+    font-size: 40px;
+    color: #052d77;
+    font-style: italic;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #30261a;
+}
+
+.logo a:hover{
+    color: black;
+}
+
+.header{
+    display: flex;
+    flex-flow:row wrap;
+    background: rgb(255, 255, 255);
+    color: #30261a;
+}
+
+.headline{
+    margin: 10px;
+    flex: 40%;
+    
+}
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-top: 20%;
+    text-align: center;
+    color: #052d77;
+}
+.headline h3{
+    font-weight: 900;
+    font-size: 20px;
+    margin-left: 10%;
+    margin-top: 2%;
+    text-align: center;
+    color:  #052d77;
+}
+.img-headline{
+    margin-right: 10px;
+    flex: 40px;
+    margin-right: 5%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20%;
+}
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-text {
+    flex: 1;
+}
+.about-text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #052d77;
+    margin-bottom: 20px;
+}
+.subsection {
+    margin-bottom: 30px;
+}
+.subsection h3 {
+    
+    font-size: 24px;
+    font-weight: 700;
+    color: #052d77;
+    margin-bottom: 10px;
+}
+.subsection p {
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.6;
+    
+}
+.footer {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #30261a;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        margin-top: 60px; 
+    }
+
+    .footer {
+        position: relative; 
+        width: 100%;
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 20px;
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-style: italic;
+        color: #30261a;
+        clear: both; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+
+    .navbar {
+        margin-top: 0px; 
+    }
+
+    .footer {
+        position: relative; 
+        width: 100%;
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 20px;
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-style: italic;
+        color: #30261a;
+        clear: both; 
+    }
+}

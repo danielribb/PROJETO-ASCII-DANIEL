@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalhes do Produto">
+    <meta name="keywords" content="Roupa, Feminino, Detalhes do Produto, CSS, HTML">
+    <title>Detalhes do Produto - Colete Tricô</title>
+    <link rel="stylesheet" href="produtosdetalhes.css">
+</head>
+<body>
+    <!--Para cada primeiro produto foi feito uma explicação de cada tag, porém não foi feito aos demais, pois a lógica permanece a mesma, só é alterado o produto, preço e etc-->
+    <!-- Barra de navegação -->
+    <div class="logo">
+        <!-- Logotipo e título da página -->
+        <h1>Detalhes do Produto</h1>
+        <!-- Link para retornar à página inicial -->
+        <a href="paginaprincipal.html">RETURN HOME</a>
+    </div>
+    <!-- Container principal do produto -->
+    <div class="produto-container">
+        <!-- Área da imagem do produto -->
+        <div class="produto-imagem">
+            <!-- Imagem do colete tricô -->
+            <img src="../imggg/colete2jpg.jpg" alt="Colete Tricô">
+        </div>
+        <!-- Área dos detalhes do produto -->
+        <div class="produto-detalhes">
+            <!-- Título do produto -->
+            <h3>COLETE TRICÔ</h3>
+            <!-- Preço do produto -->
+            <p>PREÇO: 70,00 R$</p>
+            <!-- Descrição detalhada do produto -->
+            <p>Descrição: Colete de tricô feito à mão, perfeito para todas as ocasiões.</p>
+            <!-- Opções de seleção: tamanho, cor e quantidade -->
+            <div class="selecao-opcoes">
+                <label for="tamanho">Tamanho:</label>
+                <!-- Dropdown para seleção de tamanho -->
+                <select id="tamanho">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                </select>
+                <label for="cor">Cor:</label>
+                <!-- Dropdown para seleção de cor -->
+                <select id="cor">
+                    <option value="branco">Branco</option>
+                    <option value="preto">Preto</option>
+                    <option value="cinza">Cinza</option>
+                </select>
+                <label for="quantidade">Quantidade:</label>
+                <!-- Campo de entrada para quantidade -->
+                <input type="number" id="quantidade" min="1" value="1">
+            </div>
+            <!-- Botão para finalizar compra, redirecionando para a página de entrega -->
+            <a href="entrega.html" class="btn-comprar">Comprar</a>
+        </div>
+    </div>
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <!-- Texto de direitos autorais e ano -->
+        <p>© 2024 Dan Clothes. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

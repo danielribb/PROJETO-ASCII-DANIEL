@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    background-color: #f7f7f7;
+}
+
+.logo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.logo h1 {
+    font-size: 40px;
+    color: #052d77;
+    font-style: italic;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #30261a;
+    margin-left: 20px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1 1 calc(20% - 20px);
+    max-width: calc(20% - 20px);
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-content h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #052d77;
+}
+
+.card-content p {
+    margin: 5px 0;
+    color: #666;
+    text-align: center;
+}
+
+.btn-ver-detalhes {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #052d77;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: auto; /* Garante que o botão fica no final do card */
+}
+
+.btn-ver-detalhes:hover {
+    background-color: #0366d6;
+}
+
+.footer {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #30261a;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media screen and (max-width: 992px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); 
+        max-width: calc(50% - 20px); 
+    }
+    .footer {
+        position: relative; 
+        width: 100%;
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 20px;
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-style: italic;
+        color: #30261a;
+        clear: both; /* Limpar float */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        flex: 1 1 calc(100% - 20px); 
+        max-width: calc(100% - 20px); 
+    }
+    .footer {
+        position: relative; 
+        width: 100%;
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 20px;
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-style: italic;
+        color: #30261a;
+        clear: both; 
+    }
+}

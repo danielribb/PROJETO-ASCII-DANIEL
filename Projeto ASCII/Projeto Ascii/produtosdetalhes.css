@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    background-color: #f7f7f7;
+}
+
+.logo {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.logo h1 {
+    font-size: 30px;
+    color: #052d77;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #30261a;
+    margin-left: 10px;
+}
+
+.produto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    max-width: 1000px; 
+    margin: auto;
+}
+
+.produto-imagem {
+    flex: 1;
+    max-width: 45%; 
+    padding: 20px; 
+}
+
+.produto-imagem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.produto-detalhes {
+    flex: 1;
+    max-width: 45%; 
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #30261a;
+}
+
+.produto-detalhes h3 {
+    margin-bottom: 15px;
+    font-size: 1.4em; 
+    color: #052d77;
+}
+
+.produto-detalhes p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.selecao-opcoes {
+    margin-bottom: 15px; 
+}
+
+.selecao-opcoes label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: #052d77;
+}
+
+.selecao-opcoes select,
+.selecao-opcoes input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.btn-comprar {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #052d77;
+    color: #fff;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.1em; 
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.btn-comprar:hover {
+    background-color: #0366d6;
+}
+
+.footer {
+    position: fixed; 
+    margin-top: 15%;
+    width: 100%;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #30261a;
+    clear: both;
+}
+@media screen and (min-width: 769px) {
+    .produto-container {
+        justify-content: space-around; 
+        align-items: flex-start; 
+    }
+
+    .produto-imagem,
+    .produto-detalhes {
+        flex: 1; 
+        max-width: 45%; 
+        padding: 20px; 
+    }
+
+    .produto-imagem img {
+        width: 100%; 
+        max-width: 100%; 
+        height: auto;
+        border-radius: 10px; 
+    }
+
+    .produto-detalhes {
+        text-align: left; 
+    }
+}
+@media screen and (max-width: 768px) {
+    .produto-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .produto-imagem,
+    .produto-detalhes {
+        max-width: 100%; 
+        padding: 20px; 
+    }
+    .produto-imagem img {
+        width: 100%; 
+        max-width: 100%; 
+        height: auto; 
+        border-radius: 10px;
+    }
+
+    .produto-detalhes {
+        text-align: center; 
+    }
+    .footer {
+        position: relative; 
+        width: 100%;
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 20px;
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-style: italic;
+        color: #30261a;
+        clear: both;
+    }
+}
+@media screen and (min-width: 769px) {
+    .produto-container {
+        justify-content: space-around; 
+        align-items: flex-start; 
+    }
+
+    .produto-imagem,
+    .produto-detalhes {
+        flex: 1; 
+        max-width: 45%; 
+        padding: 20px; 
+    }
+
+    .produto-imagem img {
+        width: 100%; 
+        max-width: 100%; 
+        height: auto; 
+        border-radius: 10px; 
+    }
+
+    .produto-detalhes {
+        text-align: left; 
+    }
+    .footer {
+        position: relative; 
+        width: 100%;
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 20px;
+        font-family: "PT Serif", serif;
+        font-weight: 700;
+        font-style: italic;
+        color: #30261a;
+        clear: both; 
+}
+}
+
+

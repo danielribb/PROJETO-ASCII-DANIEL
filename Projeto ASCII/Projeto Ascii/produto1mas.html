@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detalhes do Produto">
+    <meta name="keywords" content="Roupa, Masculino, Detalhes do Produto, CSS, HTML">
+    <title>Detalhes do Produto - Bermuda Jeans Graphic</title>
+    <link rel="stylesheet" href="produtosdetalhes.css">
+</head>
+<body>
+    <!--Para cada primeiro produto foi feito uma explicação de cada tag, porém não foi feito aos demais, pois a lógica permanece a mesma, só é alterado o produto, preço e etc-->
+    <!-- Cabeçalho com o logo e link para retornar à página inicial -->
+    <div class="logo">
+        <h1>Detalhes do Produto</h1>
+        <a href="paginaprincipal.html">RETURN HOME</a>
+    </div>
+
+    <!-- Container do produto com imagem e detalhes -->
+    <div class="produto-container">
+        <div class="produto-imagem">
+            <img src="../imggg/shor1.jpg" alt="Bermuda Jeans Graphic">
+        </div>
+        <div class="produto-detalhes">
+            <!-- Título e preço do produto -->
+            <h3>Bermuda Jeans Graphic</h3>
+            <p>PREÇO: 150,00 R$</p>
+
+            <!-- Descrição detalhada do produto -->
+            <p>Descrição: A Bermuda Jeans Graphic é a escolha perfeita para quem busca estilo e conforto em um só produto. Com um design moderno e casual, esta bermuda é confeccionada em jeans de alta qualidade, proporcionando durabilidade e um caimento impecável. O destaque fica por conta dos detalhes gráficos exclusivos, que adicionam um toque de personalidade e modernidade à peça. Ideal para compor looks despojados e versáteis, seja para um passeio no parque ou um encontro casual com amigos.</p>
+
+            <!-- Opções de seleção: tamanho, cor e quantidade -->
+            <div class="selecao-opcoes">
+                <label for="tamanho">Tamanho:</label>
+                <select id="tamanho">
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                </select>
+                <label for="cor">Cor:</label>
+                <select id="cor">
+                    <option value="branco">Branco</option>
+                    <option value="preto">Preto</option>
+                    <option value="cinza">Cinza</option>
+                </select>
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" min="1" value="1">
+            </div>
+
+            <!-- Botão de compra que redireciona para a página de entrega -->
+            <a href="entrega.html" class="btn-comprar">Comprar</a>
+        </div>
+    </div>
+
+    <!-- Rodapé com informações de copyright -->
+    <footer class="footer">
+        <p>© 2024 Dan Clothes. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
